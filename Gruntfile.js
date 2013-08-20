@@ -3,7 +3,6 @@ module.exports = function(grunt) {
 	// project config
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-
 		php: {
 			test: {
 				options: {
@@ -14,14 +13,13 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-
 		less: {
-			compile: {
-				src: "css/master.less",
-				dest: "css/master.css"
+			development: {
+				files: {
+					"app/css/master.css": "dev/less/master.less"
+				}
 			}
 		},
-
 		watch: {
 			less: {
     			files: 'less/*',

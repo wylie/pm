@@ -1,0 +1,27 @@
+body,
+html {
+  font-family: arial, helvetica, sans-serif;
+}
+.loading {
+  background: transparent url('../img/ajax-loader.gif') 0 0 no-repeat;
+  height: 16px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+li {
+  height: 23px;
+  padding: 5px;
+  background-color: #EFEFEF;
+}
+li:nth-child(even) {
+  background-color: #CCC;
+}
+.dir + .btn {
+  float: right;
+  display: none;
+}
+.show {
+  display: inline-block !important;
+}

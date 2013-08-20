@@ -1,0 +1,20 @@
+{
+  "name": "PM",
+  "description": "This is it.",
+  "version": "0.1.0",
+  "keywords": [
+    "pm"
+  ],
+  "author": "Wylie",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wylie/pm.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.6.4",
+    "grunt-php": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.2",
+    "mocha": "~1.12.0"
+  }
+}

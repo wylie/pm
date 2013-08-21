@@ -3,41 +3,29 @@ module.exports = function(grunt) {
 	// project config
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		
-		less: {
-			development: {
-				files: {
-					"app/css/master.css": "dev/less/master.less"
-				}
-			}
-		},
-		watch: {
-			css: {
-				files: ['dev/less/*'],
-				tasks: ['less']
-			}
-		},
-
-		express: {
-			server: {
+		php: {
+			test: {
 				options: {
-					port: 9000,
-					bases: "site"
+					port: 7007,
+					hostname: 'localhost',
+					base: '.',
+					keepalive: true,
+					open: true
 				}
 			}
 		}
 	});
 
-	grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-express');
+	grunt.loadNpmTasks("grunt-php");
+	grunt.loadNpmTasks("grunt-contrib-less");
+	grunt.loadNpmTasks("grunt-contrib-watch");
 
 	grunt.registerTask("compile", [
-		"less",
-		"watch"
+		"less"
 	]);
-	grunt.registerTask("server", [
-		"express",
-		"express-keepalive"
+
+	grunt.registerTask("test", [
+		"php"
 	]);
+	
 };

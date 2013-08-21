@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 		"less"
 	]);
 
-	grunt.registerTask("test", [
+	grunt.registerTask("server", [
 		"php"
 	]);
 	

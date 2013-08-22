@@ -1,0 +1,22 @@
+{
+  "name": "pm",
+  "version": "0.0.0",
+  "homepage": "https://github.com/wylie/pm",
+  "authors": [
+    "wylie@dukeofcheese.com <wylie@dukeofcheese.com>"
+  ],
+  "description": "Project Management",
+  "main": "dev/index.php",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.0.0"
+  }
+}
